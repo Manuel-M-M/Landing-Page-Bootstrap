@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://kit.fontawesome.com/d8a631844d.js" crossorigin="anonymous"></script>
+
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <!-- CONTENT -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-globe-americas"></i></a>
+        <h2 class="layout-tittle">🅽ó🅼🅰🅳🅰🆂</h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-1 mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Secciones
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#container-cards">Fotos</a>
+                        <a class="dropdown-item" href="#mis-viajes">Mis viajes</a>
+                        <a class="dropdown-item" href="#historias-nomadas">Historias nómadas</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- BOTÓN MODAL -->
+            <button type="button" class="btn btn-warning mr-lg-2" data-toggle="modal" data-target="#loginModal">
+                Iniciar sesión
+            </button>
+            <form class="form-inline my-2 my-lg-0 d-none d-lg-flex">
+                <button class="btn btn-outline-warning mr-sm-2 my-2 my-sm-0" type="submit">Buscar</button>
+                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
+        </div>
+    </nav>
+    <!-- MODAL -->
+    <div class="modal" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de sesión</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input required type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">No compartiremos tu email con nadie.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-warning">Iniciar sesión</button>
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div id="carouselHeaderControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner h-100">
+            <div class="carousel-item h-100 active">
+                <div class="carousel-caption d-md-block">
+                    <h5>Machu Picchu. Perú</h5>
+                    <p>2014</p>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <div class="carousel-caption d-md-block">
+                    <h5 >Cataratas de Iguazú. Brasil-Paraguay-Argentina</h5>
+                    <p>2014</p>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <div class="carousel-caption d-md-block">
+                    <h5>Kioto. Japón</h5>
+                    <p>2017</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselHeaderControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselHeaderControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- CARDS -->
+    <div class="container">
+        <div id="container-cards" class="container mt-5 mb-5">
+            <h1 class="text-center mb-5 pb-3 layout-border">Fotos</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-4">
+                <div class="col">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../ejercicio-1/images/japon.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Kabukicho en Shinjuku. De fiesta en el barrio rojo de Tokio durante una
+                                tormenta
+                                monzónica. ¡Cuidado con Doraemon! XD. 2017.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../ejercicio-1/images/bolivia.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Salar de Uyuni en mitad de los Andes, sur de Bolivia. El salar más
+                                grande
+                                del mundo. Aquí nos sabemos pequeños. 2014.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../ejercicio-1/images/polonia.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Castillo de Wawel. Día soleado en Krakovia,Polonia, mientras escribo
+                                unos
+                                poemas en mi libreta. 2019.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../ejercicio-1/images/moroco.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Uarzazat, al sur del alto Atlas marroquí. Puerta de entrada al desierto
+                                del Sahara. La simetría de una cultura ancestral que también corre por nuestras venas.
+                                2012.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../ejercicio-1/images/irlanda.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Dublín, Irlanda. Whiskey, cigars y servilletas repletas de tinta sobre
+                                la barra. Como
+                                otro
+                                inmigrante cualquiera. 2016.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4">
+                        <img class="card-img-top" src="../ejercicio-1/images/chile.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">La Patagonia chilena. El único sonido es el silbido del viento. Un
+                                lugar
+                                para
+                                olvidarte de la civilización y encontrarte a ti mismo. 2014</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABLE -->
+        <h1 id="mis-viajes" class="text-center mb-5 pb-3 layout-border">Mis viajes</h1>
+        <table class="table table-bordered b-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Destino</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Gastos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Portugal</td>
+                    <td>2009</td>
+                    <td>1 mes</td>
+                    <td>500 &euro;</td>
+                </tr>
+                <tr>
+                    <td>Austria</td>
+                    <td>2010</td>
+                    <td>1 año</td>
+                    <td>----</td>
+                </tr>
+                <tr>
+                    <td>Marruecos</td>
+                    <td>2012</td>
+                    <td>15 días</td>
+                    <td>600 &euro;</td>
+                </tr>
+                <tr>
+                    <td>Italia</td>
+                    <td>2013</td>
+                    <td>1 mes</td>
+                    <td>500 &euro;</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>Sudamérica: Chile, Perú, Bolivia, Uruguay y Argentina</td>
+                    <td>2014</td>
+                    <td>2 meses</td>
+                    <td>1500 &euro;</td>
+                </tr>
+                <tr>
+                    <td>Irlanda</td>
+                    <td>2016</td>
+                    <td>2 meses</td>
+                    <td>----</td>
+                </tr>
+                <tr>
+                    <td>Japón</td>
+                    <td>2017</td>
+                    <td>20 días</td>
+                    <td>1200 &euro;</td>
+                </tr>
+                <tr>
+                    <td>Hungría, Serbia, Rep. Checa y Polonia</td>
+                    <td>2019</td>
+                    <td>2 meses</td>
+                    <td>500 &euro;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- PAGINATION -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination mb-5 justify-content-center">
+                <li class="page-item">
+                    <a class="page-link page-color" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only ">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link page-color" href="#">1</a></li>
+                <li class="page-item"><a class="page-link page-color" href="#">2</a></li>
+                <li class="page-item"><a class="page-link page-color" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link page-color" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!-- FORM -->
+        <h1 id="historias-nomadas" class="text-center mb-5 pb-3 layout-border">Historias nómadas</h1>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tu nombre</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Introduce un nombre">
+                <small id="emailHelp" class="form-text text-muted">Puedes usar tu nombre de usuario o cualquier
+                    seudónimo.
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Título</label>
+                <input type="password" class="form-control" id="exampleInputPassword1"
+                    placeholder="Título de tu aventura">
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Tu foto</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Tu historia</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-warning">Enviar</button>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer mt-5 font-small bg-warning pt-4">
+
+        <div class="container-fluid text-center text-md-left">
+
+            <div class="row">
+
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h2 class="text-uppercase">🅽ó🅼🅰🅳🅰🆂</h2>
+                    <p>Viajes, fotografía y literatura.</p>
+
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-4 mb-md-0 mb-3"></div>
+
+                <div class="col-md-1 mb-md-0 mb-3">
+                    <ul class="ml-5 list-inline layout-f-links">
+                        <li>
+                            <a href="#!"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-3 mb-md-0 mb-3"></div>
+                    <a href="#"><i class="fas fa-globe-americas f-logue"></i></a>
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 layout-copyr">© 2020 Copyright:
+            <a class="layout-f-links" href="https://mdbootstrap.com/">Nómadas.com</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+    <script src="../js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.fa-globe-americas {
+    color: rgb(255, 196, 0);
+    font-size: 2.5em;
+}
+
+.layout-tittle {
+    ;
+}
+
+#carouselHeaderControls {
+    height: 50vh;
+}
+
+.carousel .carousel-item {
+    background-repeat: no-repeat;
+}
+
+.carousel .carousel-item:nth-child(1) {
+    background: url(../ejercicio-1/images/Machu-3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.carousel .carousel-item:nth-child(2) {
+    background: url(../ejercicio-1/images/iguazu-4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.carousel .carousel-item:nth-child(3) {
+    background: url(../ejercicio-1/images/kioto-5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.layout-border {
+   border-bottom: 2px solid rgb(255, 196, 0) ; 
+}
+
+.page-color {
+   color: rgb(255, 196, 0); 
+}
+
+.layout-f-links {
+    text-decoration: none;
+    color: black;
+}
+
+.layout-f-links i {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.layout-copyr {
+    background-color:rgb(255, 196, 0);
+}
+
+.f-logue {
+    color: black;
+}
